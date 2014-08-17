@@ -3,7 +3,7 @@ public class Person
 {
     private String name;
     private String friends;
-    private Picture picture;    
+//    private Picture picture;    
 
     // TODO #1: Fill in the rest of the arguments to the Person constructor
     // The Person constructor should take in 3 additional arguments:
@@ -14,7 +14,7 @@ public class Person
     {
         name = aName;
         friends = "";
-        picture = new Picture(pictureName);
+        Picture picture = new Picture(pictureName);
         picture.load(pictureName);
         picture.translate(xCoord,yCoord);
         picture.draw();
