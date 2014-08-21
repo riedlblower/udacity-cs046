@@ -21,8 +21,6 @@ public class Person
         Picture picture = new Picture(pictureName);
         picture.translate(x, y);
         picture.draw();
-
-     
     }
     
     public void addFriend(Person friend) 
