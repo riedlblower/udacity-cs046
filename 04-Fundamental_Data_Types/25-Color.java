@@ -9,6 +9,7 @@ public class Color
 
     /**
      * Makes this color redder.
+     * @param added_redness the added amount of redness
      */
     public void redden(int added_redness) 
     {
