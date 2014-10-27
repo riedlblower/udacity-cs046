@@ -36,11 +36,6 @@ public class CreditCard
             }
             n = n/10;
         }
-        if (sum % 10 == 0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return (sum % 10 == 0);
     }
 }
