@@ -122,3 +122,27 @@ public class Average
         }
     }
 }
+
+//======================================
+// unit6.2-10
+
+import java.util.Scanner;
+public class Largest
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter values, Q to quit: ");
+        double largest = in.nextDouble();
+        while (in.hasNextDouble())
+        {
+            double input = in.nextDouble();
+            if (input > largest)
+            {
+                largest=input;
+            }
+        }
+        System.out.println("Largest value: " + largest);
+    }
+}
+//======================================
