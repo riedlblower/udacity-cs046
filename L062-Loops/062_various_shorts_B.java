@@ -28,7 +28,7 @@ public class CountingMatches
 }
 //======================================
 // Bluej project: lesson6/counting_matches_digits
-// unit6.2-15
+// unit6.2-15/16
 /**
  * A class that represents a number and can report
  * properties of the number.
@@ -69,7 +69,7 @@ public class Number
 }
 //======================================
 // Bluej project: finding_the_first_match
-// unit6.2-16
+// unit6.2-16/17
 // Write a program that finds the first word in Alice In Wonderland
 // that is longer than a given number of characters.
 
@@ -103,3 +103,47 @@ public class FirstMatch
 }
 //======================================
 
+// Bluej project: lesson6/first_match_no_long_words
+// Write a program that finds the first word in Alice In Wonderland
+// that is longer than 60 characters, and if there are no words
+// that long, prints "There are no long words".
+// unit6.2-18/19
+
+import java.util.Scanner;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+
+public class FirstMatch
+{
+    public static void main(String[] args) throws FileNotFoundException
+    {
+        Scanner in = new Scanner(new FileReader("aliceInWonderland.txt"));
+        String longWord = "";
+        boolean found = false;
+
+        final int THRESHOLD = 60;
+
+        while (in.hasNext() && !found)
+        {
+            String word = in.next();
+            if (word.length() > THRESHOLD)
+            {
+                longWord = word;
+                found = true;
+            }
+        }
+        // TODO: if there are no long words, print
+        // "There are no long words"
+        // instead of
+        // "The first long word is: " ...
+        if (longWord.equals(""))
+        {
+            System.out.println("There are no long words");
+        }
+        else
+        {
+            System.out.println("The first long word is: " + longWord);
+        }
+    }
+}
+//======================================
