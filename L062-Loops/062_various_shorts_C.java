@@ -19,7 +19,7 @@ public class Colors
             {
                 int x = i * WIDTH;
                 int y = j * WIDTH;
-                Rectangle rect = new Rectangle(x, y, WIDTH - 1, WIDTH - 1);
+                Rectangle rect = new Rectangle(x, y, WIDTH - 1, WIDTH - 1); //'-1' to leave gap between rectangles
                 int blue = i * 255/(COLUMNS-1);
                 int green = j * 255/(ROWS-1);
                 Color fillColor = new Color(0, green, blue);
