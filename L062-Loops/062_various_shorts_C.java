@@ -66,3 +66,39 @@ public class ClockTimes
     }
 }
 //======================================
+// lesson6/triangle_pattern
+// unit6.2-22
+//
+// Write nested loops that make the following pattern of brackets
+// (Use the numberOfRows variable so it can easily be modified
+// to print any number of rows): 
+// []
+// [][]
+// [][][]
+// [][][][]
+// [][][][][]
+
+// If numberOfRows were 6, the pattern would be: 
+// []
+// [][]
+// [][][]
+// [][][][]
+// [][][][][]
+// [][][][][][]
+public class TrianglePattern
+{
+    public static void main(String[] args)
+    {
+        // Please do not modify this line. 
+        int numberOfRows = 5;
+            for (int i = 0; i < numberOfRows; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    System.out.printf("[]");
+                }
+                System.out.println();
+            }
+    }
+}
+//======================================
