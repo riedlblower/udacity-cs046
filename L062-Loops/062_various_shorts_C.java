@@ -269,3 +269,54 @@ public class ThrowingADie
 }
 //======================================
 
+// lesson6/chevalier_de_mere
+// unit6.2-28
+
+import java.util.Random;
+
+public class DiceGame
+{
+    Random generator;
+    
+    public DiceGame()
+    {   
+        generator = new Random(45);
+    }
+    /** 
+     * Throw a die four times and bet on at least one 6. 
+     * @return true if the chevalier wins. 
+     */
+    public boolean game1()
+    {
+        boolean game1_result = false;
+        for (int i = 1; i <= 4; i++)
+        {
+            int rolled_dice = generator.nextInt(6) + 1;
+            if (rolled_dice == 6)
+            {
+                game1_result = true;
+            }
+        }
+        return game1_result;            
+    }
+    
+    /**
+     * Throw two dice 24 times and bet on at least one double-six.
+     * @return true if the chevalier wins. 
+     */
+    public boolean game2()
+    {   
+        boolean game2_result = false;
+        for (int i = 1; i <= 24; i++)
+        {
+            int rolled_dice1 = generator.nextInt(6) + 1;
+            int rolled_dice2 = generator.nextInt(6) + 1;
+            if ((rolled_dice1 == 6) && (rolled_dice2 == 6))
+                {
+                    game2_result = true;
+                }
+        }
+        return game2_result;
+    }
+}
+//======================================
