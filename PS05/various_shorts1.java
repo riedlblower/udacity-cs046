@@ -61,4 +61,31 @@ public class Word
     }
 }
 //===============================================================
+//
+// TODO Write code to get a number in the range of 1 to 10
+// HINT: You need to use a do while loop.
+// HINT: You will need to import the Scanner class and create a Scanner object to use to get input from the user
+//
 
+import java.util.Scanner;
+
+public class InputWithDo
+{
+    /*
+     * Gets a number betwwen 1 and 10 (inclusive) from the user
+     * @return user input between 1 and 10 (inclusive)
+     */
+    public int getValidInput()
+    {
+        Scanner in = new Scanner(System.in);
+        int value; // A user entered value between 0 and 10 inclusive.
+        do
+        {
+            System.out.print("Enter an integer >=1 and <=10: ");
+            value = in.nextInt();
+        }
+        while (value > 10 || value < 1);
+        return value;
+    }
+}
+//===============================================================
