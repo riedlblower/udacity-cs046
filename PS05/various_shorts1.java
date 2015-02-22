@@ -144,6 +144,8 @@ public class Drawings
     }
 }
 
+//===============================================================
+//ps5-20
 //
 // This modifies the previous problem. Start with that solution as your base
 // Complete the code to write nested loops that make the a pattern of brackets: a
@@ -154,8 +156,6 @@ public class Drawings
 //
 //
 
-//===============================================================
-//ps5-20
 public class Drawings
 {
    /**
