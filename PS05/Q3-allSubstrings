@@ -1,0 +1,35 @@
+public class Word
+{
+    private String word = null;
+    private int length;
+    
+    public Word(String word)
+    {
+        this.word = word;
+        this.length = word.length();
+    }
+    
+    /**
+     * Gets all the substrings of this Word.
+     * @return all substrings of this Word separated by newline
+     */
+
+    public String getSubstrings()
+    {
+        String substrings = "";
+        for (int j = 1; j <= length; j++)
+        {
+         //   int i = 0;
+        //    while (i + j <= length)
+            for (int i = 0; i <= length - j; i++)
+            {
+                String excerpt = word.substring(i,i+j);
+                substrings = substrings + excerpt + "\n";
+             //   i = i + 1;
+            }
+        }
+            
+        return substrings;
+    }
+}
+
