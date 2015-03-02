@@ -13,7 +13,7 @@ public class ListOfPictures
         gallery.add(new Picture("monet2.jpg"));
         gallery.add(new Picture("renoir1.jpg"));
 
-        int width = 0;
+        int width = 0;    // is this line necessary?
         for(int i = 1; i < gallery.size();i++)
         {
             Picture pic = gallery.get(i);
@@ -21,6 +21,7 @@ public class ListOfPictures
             width = left.getMaxX();
             width = width + 10;
             pic.translate(width, 0);
+            //pic,translate(left.getMaxX() + 10,0)
         }
         
         for (int i = 0; i < gallery.size(); i++)
