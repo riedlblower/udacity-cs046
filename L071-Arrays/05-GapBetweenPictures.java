@@ -21,7 +21,7 @@ public class ListOfPictures
             width = left.getMaxX();
             width = width + 10;
             pic.translate(width, 0);
-            //pic,translate(left.getMaxX() + 10,0)
+            //pic.translate(left.getMaxX() + 10,0)
         }
         
         for (int i = 0; i < gallery.size(); i++)
