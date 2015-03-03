@@ -19,10 +19,6 @@ public class ListOfPictures
             width = width + 10;
             pic.translate(width,0);
             width = pic.getMaxX();
-        }
-        
-        for (Picture pic : gallery)
-        {
             pic.draw();
         }
     }
