@@ -3,7 +3,6 @@ public class Person
 {
     private String name;
     private ArrayList<String> friends;
-    private static final String SEPARATOR = ", ";
 
     public Person(String name)
     {
