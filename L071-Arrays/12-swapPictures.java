@@ -15,12 +15,10 @@ public class ListOfPictures
         
         // TODO: Rotate the gallery so that the last picture
         // becomes the first one, the first the second, and so on. 
-        
-        int lastIndex = gallery.size();
-        Picture tempPicture;
-        tempPicture = gallery.get(lastIndex-1);
-        gallery.remove(lastIndex-1);
-        gallery.add(0, tempPicture);
+
+        // "remove" also takes a copy of the last element.         
+        Picture last = gallery.remove(gallery.size()-1);
+        gallery.add(0, last);
         
         int rightmostX = 0;        
         for (Picture pic : gallery)
