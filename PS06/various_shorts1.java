@@ -49,4 +49,8 @@ public class ListOfVerticalPictures
 }
 
 ==================================================
-5.
+5. get size of array list named palette
+
+int size = palette.size()
+
+6.
