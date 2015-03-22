@@ -11,7 +11,7 @@ palette.add(Color.RED);
 
 3. get last element in ArrayList of 9 colors;
 
-Color color = get(8);
+Color color = palette.get(8);
 
 ==================================================
 4. 
@@ -53,4 +53,8 @@ public class ListOfVerticalPictures
 
 int size = palette.size()
 
-6.
+6. get last element
+
+Color color = palette.get(palette.size()-1);
+
+7.
