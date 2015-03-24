@@ -92,3 +92,8 @@ public class ShiftFirstToEnd
    }
 }
 ==================================================
+8. Complete the given class to display the last picture in the array list
+
+gallery.get(gallery.size()-1).draw();
+
+9.
