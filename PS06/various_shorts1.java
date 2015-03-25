@@ -100,7 +100,7 @@ gallery.get(gallery.size()-1).draw();
 int index = palette.size()-2;
 
 ==================================================
-10.
+11.
 // Complete this class to do the following.
 // 1. Define and create an ArrayList of Strings called animals
 // 2. Add the string "ape"
@@ -128,7 +128,7 @@ public class AddTester
    }
 }
 ==================================================
-11.
+12.
 // Complete this class. An array list of Strings called cities has been defined
 // for you and partially populated. Add code to do the following:
 // 1. Add the string "New York so that it is first in the arraylist
@@ -158,3 +158,29 @@ public class ArrayListMethodTester
    }
 }
 ==================================================
+13.
+// Complete this class. An array list of Strings called cities has been defined
+// for you and populated
+// You are to print the elements, one to a line (please use a for loop)
+// Afterwards, print the element at index 2
+
+import java.util.ArrayList;
+public class GetAndLoopDemo
+{
+   public static void main(String[] args)
+   {
+       ArrayList<String> cities = new ArrayList<String>();
+       cities.add("Chicago");
+       cities.add("Dallas");
+       cities.add("San Jose");
+       cities.add("Seattle");
+
+       // TODO: Use a loop to print the elements one to a line
+       for (String city : cities)
+        {
+           System.out.println(city);
+        }
+       // TODO: Print the element at index 2
+       System.out.println(cities.get(2));
+   }
+}
