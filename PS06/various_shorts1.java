@@ -185,3 +185,34 @@ public class GetAndLoopDemo
    }
 }
 ==================================================
+14.
+// Complete the method in this class to find the average length of the words in an
+// array list of strings and return it. The average length of words is sometimes used
+// as a simple measure of reading difficulty.
+import java.util.ArrayList;
+public class StringArrays
+{
+   public double averageCountPerWord(ArrayList<String> words)
+   {
+       double average = 0;
+       double count = 0.0; //defined as double so we do double division
+       double length = 0;
+
+       // TODO: Find the total number of characters in all the words
+       for (String word : words)
+       {
+           length = length + word.length();
+           count = count + 1;
+       }
+
+       // TODO: Calculate the average
+       if (count > 0) //supply the condition
+       {
+          //your code here
+           average = length / count;
+       }
+
+       return average;
+    }
+}
+==================================================
