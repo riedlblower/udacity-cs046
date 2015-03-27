@@ -235,8 +235,8 @@ public class StringArrayUtil
            int length = word.length();
            if (length < shortestLength)
            {
-//               shortest = word;
-                shortest.equals(word);
+               shortestLength = length;
+               shortest = word;
            }
        }
       return shortest;
