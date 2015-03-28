@@ -280,8 +280,7 @@ public class ArrayListUtil
         for (String word : text)
         {
             int length = word.length();
-            System.out.print(length);
-            System.out.print(" ");
+            System.out.print(length + " ");
         }
     }
 }
