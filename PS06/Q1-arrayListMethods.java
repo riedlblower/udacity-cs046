@@ -37,7 +37,6 @@ public class ArrayListMethods
         {
             for (int i = index+1; i < length; i++)
             {
-                
                 if (list.get(index).compareTo(list.get(i)) > 0)
                 {
                     sorted = false;
@@ -61,7 +60,6 @@ public class ArrayListMethods
         // TODO: Replace all but the first and last elements with the larger of its to neighbors
         for (int i = 1; i < list.size()-1; i++)
         {
-            
             if (list.get(i).compareTo(list.get(i-1)) < 0)
             {
                 list.set(i,list.get(i-1));
@@ -107,9 +105,17 @@ public class ArrayListMethods
     public void xyzToFront()
     {
         int insertAt = 0;
-
         // TODO:  Move any word that starts with x, y, or z to the front of the ArrayList, but otherwise preserves the order
-
+        int length = list.size();
+        for (int index=0; index <= length-1; index++)
+        {
+            if("xyzXYZ".contains(list.get(index).substring(0,1)))
+            {
+                list.add(insertAt,list.get(index));
+                list.remove(index+1);
+                insertAt++;
+            }
+        }
     }
 
     /**
