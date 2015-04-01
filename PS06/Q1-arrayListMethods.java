@@ -111,8 +111,9 @@ public class ArrayListMethods
         {
             if("xyzXYZ".contains(list.get(index).substring(0,1)))
             {
-                list.add(insertAt,list.get(index));
-                list.remove(index+1);
+//                list.add(insertAt,list.get(index));
+//                list.remove(index+1);
+                list.add(insertAt,list.remove(index));
                 insertAt++;
             }
         }
