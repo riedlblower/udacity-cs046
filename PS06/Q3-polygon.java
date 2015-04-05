@@ -28,7 +28,7 @@ public class Polygon
         {
             return 0;
         }
-        Point second = polygon.get(polygon.size()-1);
+        Point second = polygon.get(polygon.size()-1);  // (Calculate 1st to last point first)
         for (int i = 0; i <= polygon.size()-1; i++)
         {
             Point first = polygon.get(i);
