@@ -32,10 +32,16 @@ public class HomeworkScores
         // Sum all the scores that have been entered so far and
         // return the result.
         double total = 0;
-        for (double value: scores)
+        // only go through part of array with defined values
+        for (int i = 0; i < currentSize; i++)
         {
-            total = total + value;
+            total = total + scores[i];
         }
+        // enhanced for loop might have junk in unused part
+//        for (double value: scores)
+//        {
+//            total = total + value;
+//        }
         return total;
     }
 
