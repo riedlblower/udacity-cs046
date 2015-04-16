@@ -36,8 +36,8 @@ int length = scores.length;
 10. Write code to assign 98 to the last element of the array "scores". scores is of unknown length.
 scores[scores.length-1] = 98;
  
- 11. Print the first element of an array "scores" of unknown length.
- System.out.println(scores[0]);
+11. Print the first element of an array "scores" of unknown length.
+System.out.println(scores[0]);
  
 
 
