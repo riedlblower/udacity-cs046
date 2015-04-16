@@ -39,6 +39,7 @@ scores[scores.length-1] = 98;
 11. Print the first element of an array "scores" of unknown length.
 System.out.println(scores[0]);
  
+===========================================================
 16.
 // Complete the method in this class. It returns a string with the elements of the array
 // in reverse order separated by a space. If the array looks like this [1, 2 ,3 ,4], your
@@ -62,7 +63,29 @@ public class ArrayUtil
   }
 }
 
+===========================================================
+17.
+// Complete this method to return the number of zeros in the int array
+// parameter, values
+public class Util
+{
+    public int getCount(int[] values)
+    {
+        int count = 0;
+        for (int current : values)
+        {
+            // TODO: count the number of zeros in values
+            if (current == 0)
+            {
+                count++;
+            }
+        
+        }
+        return count;
+    }
+}
 
+===========================================================
 
 
 
