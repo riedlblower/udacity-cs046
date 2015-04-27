@@ -10,7 +10,7 @@ int[] scores = new int[50];
 => this array can hold 12 elements and 12 is the length of the array.
 
 4. double[] temperatures = new double[12];
-=> initial value at index 5 is 0.0
+=> what is the initial value at index 5? Answer =  0.0
 
 5. double[] temperatures = new double[12];
 print out the element at index 9.
