@@ -1,8 +1,8 @@
-import java.util.Arrays;
 //
 // Complete the methods below. These methods manipulate Arrays of Strings
 // For the draft, complete the first method
 //
+import java.util.Arrays;
 
 public class ArrayMethods
 {
@@ -90,6 +90,31 @@ public class ArrayMethods
     public void xyzToFront()
     {
         int insertAt = 0;
+        System.out.println(Arrays.toString(list));
+        for (int i = 0; i < list.length; i++)
+        {
+            String entry = list[i];
+            String firstLetter = entry.substring(0,1);
+            System.out.println(firstLetter);
+            if ("xyzXYZ".contains(firstLetter))
+            {
+                System.out.println("match!");
+                list[i] = list[insertAt];
+                list[insertAt] = entry;
+                insertAt++;
+            }
+            System.out.println(Arrays.toString(list));
+
+//        for (int index=0; index <= length-1; index++)
+//        {
+//            if("xyzXYZ".contains(list.get(index).substring(0,1)))
+//            {
+//                list.add(insertAt,list.remove(index));
+//                insertAt++;
+            
+            
+        }
+        
 
     }
 
