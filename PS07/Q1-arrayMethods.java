@@ -90,32 +90,25 @@ public class ArrayMethods
     public void xyzToFront()
     {
         int insertAt = 0;
-        System.out.println(Arrays.toString(list));
+        String temp1, temp2;
         for (int i = 0; i < list.length; i++)
         {
             String entry = list[i];
             String firstLetter = entry.substring(0,1);
-            System.out.println(firstLetter);
             if ("xyzXYZ".contains(firstLetter))
             {
-                System.out.println("match!");
-                list[i] = list[insertAt];
+                temp1 = list[insertAt];
                 list[insertAt] = entry;
+                for (int j = insertAt+1; j <= i; j++)
+                {
+                    temp2 = list[j];
+                    list[j] = temp1;
+                    temp1 = temp2;
+                }
                 insertAt++;
             }
-            System.out.println(Arrays.toString(list));
-
-//        for (int index=0; index <= length-1; index++)
-//        {
-//            if("xyzXYZ".contains(list.get(index).substring(0,1)))
-//            {
-//                list.add(insertAt,list.remove(index));
-//                insertAt++;
-            
-            
+//            System.out.println(Arrays.toString(list));            
         }
-        
-
     }
 
     /**
