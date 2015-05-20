@@ -68,7 +68,8 @@ public class Car
         location = location + 1;     //drive to relevant location
         for (int i = 0; i <= passengers.size()-1; i++)
         {
-            if (passengers.get(i).getDestination() == location)
+            Person p = passengers.get(i);
+            if (p.getDestination() == location)
             {
                 passengers.remove(i);
             }
