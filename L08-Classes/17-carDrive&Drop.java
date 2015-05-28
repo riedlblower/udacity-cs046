@@ -72,6 +72,7 @@ public class Car
             if (p.getDestination() == location)
             {
                 passengers.remove(i);
+                i = i-1;    //remember array shifted one cell to the left because of remove(i)
             }
         }
         return;
