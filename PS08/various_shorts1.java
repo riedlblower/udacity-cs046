@@ -17,3 +17,7 @@ int columns = matrix[0].length
 5. Put 54 into the last column of the last row of the matrix.
 
 matrix[matrix.length-1][matrix[0].length-1] = 54;
+
+6. Print out the last entry of the last row of the matrix.
+
+System.out.println(matrix[matrix.length-1][matrix[0][length-1]);
