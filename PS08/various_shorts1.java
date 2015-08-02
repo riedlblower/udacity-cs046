@@ -9,3 +9,7 @@ matrix[0][0] = 10;
 3. Find the number of rows in the array.
 
 int rows = matrix.length;
+
+4. Find the number of columns in the array.
+
+int columns = matrix[0].length
