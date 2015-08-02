@@ -6,3 +6,6 @@ int [][] numbers = new int[4][5];
 
 matrix[0][0] = 10;
 
+3. Find the number of rows in the array.
+
+int rows = matrix.length;
