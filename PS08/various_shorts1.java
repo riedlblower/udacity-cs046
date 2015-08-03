@@ -114,3 +114,8 @@ public class Financial
     }
 }
 ========================================================
+13. Define a double constant in SalesInvoice class that can be accessed by methods of any other class.
+
+public static final double TAX_RATE = 0.085
+
+========================================================
