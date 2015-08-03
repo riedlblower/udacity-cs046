@@ -118,4 +118,11 @@ public class Financial
 
 public static final double TAX_RATE = 0.085
 
+14. What two static variables of the System class have we used in this class?
+
+'in' and 'out'
+
+See: http://docs.oracle.com/javase/8/docs/api/java/lang/System.html
+
+
 ========================================================
