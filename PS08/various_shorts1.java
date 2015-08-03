@@ -88,7 +88,8 @@ public class ArrayUtil
 10. An 'instance' method is invoked on a specific instance of a class
 ========================================================
 
-11. Calculate the tip of a meal costing 24.50 where the class Dinner has a method saying 'public static double tip(double amount){...}'
+11. Calculate the tip of a meal costing 24.50 where the class Dinner has a method 
+saying 'public static double tip(double amount){...}'
 
 double tip = Dinner.tip(24.50);
 
