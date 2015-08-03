@@ -83,3 +83,8 @@ public class ArrayUtil
     }
 }
 ========================================================
+9. A 'static' method is not invoked on any object.
+
+10. An 'instance' method is invoked on a specific instance of a class
+========================================================
+
