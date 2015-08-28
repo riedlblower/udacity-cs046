@@ -14,3 +14,5 @@ There is a run time error (note: not compile error) because some drawables canno
 
 java.lang.ClassCastException:
 House cannot be case to Moveable
+
+"if (d instanceof Moveable)" means, I think, each d is checked for "implements Drawable, Moveable" in class definition and house didn't contain this while car and dog did.
