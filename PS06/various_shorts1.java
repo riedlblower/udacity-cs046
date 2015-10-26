@@ -5,6 +5,25 @@ ArrayList<Color> palette = new ArrayList<Color>();
 left hand side: declares that palette is a reference to an ArrayList object. 
 right hand side: creates (instantiates) an ArrayList object and returns a reference. 
 
+Note the following from from Lesson 9 Video 24 
+[start]
+public class ChoiceQuestion extends Question
+{
+    // TODO: Add an ArrayList<String> instance variable to hold the choices
+    private ArrayList<String> choices;
+    
+    /**
+       Constructs a choice question with no choices.
+    */
+    public ChoiceQuestion()
+    {
+        // TODO: Initialize the list of choices
+        choices = new ArrayList<String>();
+    }
+    :
+}
+[end]
+
 2. add Color.Red to the ArrayList
 
 palette.add(Color.RED);
