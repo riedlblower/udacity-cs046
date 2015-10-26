@@ -30,22 +30,16 @@ public class NumericQuestion extends Question
 
     public boolean checkAnswer(String response)
     {
-        Double userresponse = Double.parseDouble(response);  //convert String to Double
-        Double difference = userresponse - answer;
-        if (tolerance >= Math.abs(difference))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
         
         // TODO: Implement this method
         // Hint: Double.parseDouble converts a string
         // containing digits and a decimal point
         // into a floating-point number. For example,
         // Double.parseDouble("3.14") is 3.14.
+
+        Double userresponse = Double.parseDouble(response);  //convert String to Double
+        Double difference = userresponse - answer;
+        return (tolerance >= Math.abs(difference));
     }
 }
 
