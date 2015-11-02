@@ -61,3 +61,12 @@ public class UnitCircle implements Comparable<UnitCircle>
 }
 
 =============================================================================
+7. String and Integer classes both implement the Comparable interface.
+For each of the following statements mark if it is valid or invalid
+
+Comparable c1 = new String("Hello");	valid
+Comparable c2 = new Integer(42);		valid
+Comparable c3 = new Comparable();		invalid
+String s = c1;							invalid
+
+=============================================================================
