@@ -3,7 +3,8 @@
 public interface Growable 
 { ... }
 
-2. We want to declare an interface Readable. It has one method read(). Read() takes no parameters and is void. Complete the code
+2. We want to declare an interface Readable. It has one method read(). Read() takes no parameters and is void. 
+Complete the code
 
 public interface Readable
 {  void read();  }
@@ -12,12 +13,14 @@ public interface Readable
 
 public class Dog implements Growable
 
-4. The class Billboard implements the Readable interface. It has one method read() which is void and takes no parameters. Bill board may contain many methods but there is one method that is required. Provide the header for that method
+4. The class Billboard implements the Readable interface. It has one method read() which is void and takes no parameters. 
+Bill board may contain many methods but there is one method that is required. Provide the header for that method
 
 public void read()
 {  ..  }
 
-5. What is the name of the metod that a class must provide if the class implements the Comparable interface from the standard Java library?
+5. What is the name of the metod that a class must provide if the class implements the Comparable interface from 
+the standard Java library?
 
 compareTo()
 
