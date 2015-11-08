@@ -175,3 +175,13 @@ public class Data
     }
 }
 =============================================================================
+10. Consider classes Cat and Mammal. Which is the super class
+
+Answer: Mammal
+
+11. Motorcycle is a subclass of vehicle. Complete the code in this method header of Motorcycle
+
+public class Motorcycle extends Vehicle
+
+=============================================================================
+
