@@ -257,3 +257,34 @@ public class Manager extends Employee
     }
 }
 =============================================================================
+
+19. Given that Sub is a subclass of Sandwich and the following declarations
+
+Sandwich sandwich = new Sandwich();
+Sub sub = new Sub();
+
+Which of the following are legal?
+a. sandwich = sub;
+b. sub = sandwich;
+c. sub = new Sandwich
+d. sandwich = new Sub();
+
+Answer = {a, d}
+
+=============================================================================
+
+20. The CheckingAccount class extends BankAccount.
+The BankAccount class has a deposit method and the CheckingAccount class overrides it. 
+Now given this code segment
+
+BankAccount account = new CheckingAccount();
+account.deposit(amount);
+
+Whose deposit method is called:
+a. BankAccount
+b. CheckingAccount
+c. Not enough information to say
+
+Answer b.
+
+=============================================================================
