@@ -9,8 +9,8 @@ String first = name.substring(0,1);
 3. Complete the code to get an uppercase version of the String name
 String upper = name.toUpperCase();
 
-4. You need to declare your instance variables as private so that they can only be accessed by methods of the same class. And not by methods of other classes.
-
+4. You need to declare your instance variables as private so that they can only be accessed by 
+methods of the same class. And not by methods of other classes.
 
 5. How do add in description of a method when returning a variable
 /** Gets the perimeter of this Circle object
