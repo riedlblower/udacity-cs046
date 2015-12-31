@@ -281,7 +281,7 @@ public class RectangleList
     }
 }
 =============================
-22. Flag Drawing
+23. Flag Drawing
 
 // Here is the flag of Gabon. It has three equal horizontal lines of green, yellow,
 // and blue. You are provided with the familiar Flag class. You are to complete the getColorAt
@@ -337,7 +337,7 @@ public class Flag
     }
 }
 =============================
-23. Number Pyramid
+24. Number Pyramid
 
 // Write code in this main method to print a pyramid of numbers like this:
 //
