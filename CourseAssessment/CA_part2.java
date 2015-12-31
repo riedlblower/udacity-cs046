@@ -321,11 +321,11 @@ public class Flag
         // TODO: set the variable c to that color
         // TODO: use else if
         Color c;
-        if ((x < width) && (y>=2*height/3 && y<height))
+        if (y>=2*height/3 && y<height)
         {
             c = Color.BLUE;
         }
-        else if ((x < width) && (y>=height/3 && y<2*height/3))
+        else if (y>=height/3 && y<2*height/3)
         {
             c = Color.YELLOW;
         }
