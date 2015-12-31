@@ -1,6 +1,6 @@
 Course Assessment Part 3 (Intro to Java Programming)
 
-24. Arraylist Algorithms
+25. Arraylist Algorithms
 
 //
 // RectangleList class manages a list of Rectangles from the graphics package
