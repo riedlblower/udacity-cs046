@@ -21,3 +21,13 @@ e.g. while the switch is off.
 --------------------------------------------------
 
 32. Interfaces or Inheritance?
+
+I can inherit once and thereby extend the functionality of the class. With inheritance I get all the functions. 
+We can have multiple interfaces. For each interface a function has to be implemented.
+
+https://www.quora.com/What-is-the-main-difference-between-inheritance-and-interface-in-Java
+A car is a vehicle (inheritance). A car can drive (interface)
+Basically, an interface is just abstract methods whereas inheritance is where you copy a superclass completely, 
+and them add a few other things
+
+--------------------------------------------------
