@@ -31,3 +31,33 @@ Basically, an interface is just abstract methods whereas inheritance is where yo
 and them add a few other things
 
 --------------------------------------------------
+33.  Different Kinds of Variables (Parameter, instance and local)
+
+1. A local variable is defined within the scope of a block and must be initialised before use.
+A local variale is only visable within the method or block they are declared.
+e.g. if (i = 10) { String s = "hello";}
+
+2. An instance field is bound to the object itself and don't have to be initialised before use.
+Instance variables are defined within a class but outside a method.
+Instance variables can be seen by all methods in the class
+e.g. public class Point { 
+		private int xValue; 	
+		}
+		
+3. An input parameter is passed into a method or constructor
+Its scope is the method or constructor it is passed into.
+e.g. public class Point { 
+		private int xValue; 	
+		public Point(int x){xValue=x;}
+		public void setX(int x) {xValue=x;}
+		}
+
+Example of all three kinds of variables:		
+e.g. public class Point { 
+		private int xValue; 	
+		public Point(int x){xValue=x;}
+		public void showX() {
+			String s = "The value is: ";
+			System.out.println (s + xValue)}
+		public void setX(int x) {xValue=x;}
+		}
